@@ -48,3 +48,17 @@ console.log(!'');//true
 console.log(!!'x');//true
 // The first ! coerces data into the oppposite of what it is in Boolean terms
 // The second !! flips the value from true to false, or false to true
+
+// Compound + operator
+
+var x = 1;
+// We can count up in one of four ways
+var x = x + 1;
+console.log(x); // 2
+x += 1;
+console.log(x); // 3
+x ++; // One and one only added
+console.log(x); // 4
+++x;
+console.log(x); // 5
+
