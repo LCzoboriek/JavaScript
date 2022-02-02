@@ -36,3 +36,15 @@ console.log(Boolean(0));//false zero numbers
 console.log(Boolean(1));//true, as values are contained, doesn't have to be positive numbers, can be negative, its just any non zero number
 console.log(Boolean({a:1, b:2})); // true: any object
 console.log(Boolean({})); // also true as it includes empty objects
+
+// We can truthy/falsy values from any data by the !! operator
+
+console.log(!true); // false
+console.log(!false); // true
+console.log(!!true);
+console.log(!!false);
+console.log(!!'');// False 
+console.log(!'');//true
+console.log(!!'x');//true
+// The first ! coerces data into the oppposite of what it is in Boolean terms
+// The second !! flips the value from true to false, or false to true
