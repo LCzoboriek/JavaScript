@@ -53,3 +53,9 @@ dimensions.depth = 500; // this works because you can change the internal struct
 // use const for complex data eg objects, arrays, function expressions
 // var puts properties on the global or window object
 // const and let do not, this is a good thing
+
+// Variables may be of two types:
+// primitives - immutable values
+// reference types - mutable by default
+
+const dimensions2 = dimensions; // dimensions and all its properties are being inherited and copied into dimensions2
