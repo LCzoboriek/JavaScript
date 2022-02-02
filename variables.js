@@ -29,3 +29,13 @@ console.log(typeof width);
 console.log(height);
 console.log(typeof height);
 
+//what if we do not wish variables to be re-assigned?
+
+const depth = 600;
+console.log(depth);
+console.log(typeof depth);
+
+//depth = 500; // You cannot reassign const variables TypeError: Assignment to constant variable.
+
+// Const may be used for declaring and assigning 
+// const may not be reassigned a different overall type
