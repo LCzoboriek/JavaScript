@@ -59,3 +59,9 @@ dimensions.depth = 500; // this works because you can change the internal struct
 // reference types - mutable by default
 
 const dimensions2 = dimensions; // dimensions and all its properties are being inherited and copied into dimensions2
+// dimensions props are mutable via EITHER REFERENCE
+
+dimensions.depth = 500;
+console.table(dimensions);
+dimensions2.depth = 200;
+console.table(dimensions);
