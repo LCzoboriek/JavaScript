@@ -24,6 +24,8 @@
             document.querySelector("#welcome").innerHTML = 
             'Welcome to my site, ' + name;
         }
+        // Call backs are very essential to javascript, in this case, the get and display name wont occur until the first argument in the event listenere happens, which is a click on a button, you also dont have
+        // any added brackets after the get and display name, as itll make it occur early as well, look up callbacks into more detail to understand this concept
         document.querySelector("#submit").addEventListener(
             "click", getAndDisplayName);
     </script>
