@@ -8,4 +8,7 @@
         alert("Hi inline!");
     }
 </script>
+<button onclick="function sayHi() { alert('Hi inline!'); } sayHi() ">Say hi</button>
 </body>
+<!-- The inline code takes precedence over local code which takes precedence over external code. Having said that, like CSS, external JS code is preferred for the reasons of the fact that its more
+utilised throughout code, and is cleaner -->
