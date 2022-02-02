@@ -1,0 +1,11 @@
+<h1>Linked local inline examples</h1>
+<button onclick="sayHi()">Say hi</button>
+<body>
+<script src="external.js"></script>
+<!-- inline here will now overrite the external script above -->
+<script>
+    function sayHi(){
+        alert("Hi inline!");
+    }
+</script>
+</body>
