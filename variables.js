@@ -49,3 +49,7 @@ console.log(dimensions);
 console.table(dimensions); //This is how you output a table of key/value pairs in a variable
 
 dimensions.depth = 500; // this works because you can change the internal structure of the const variables, but you cant radically change the data type
+
+// use const for complex data eg objects, arrays, function expressions
+// var puts properties on the global or window object
+// const and let do not
