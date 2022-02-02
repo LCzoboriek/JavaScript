@@ -34,4 +34,5 @@ console.log(Boolean('')); // boolean of an empty string is false
 console.log(Boolean('String')); // true for any string that has things contained within it. This could be a good way of determining if someone enters characters for a password or leaves it blank, same for username
 console.log(Boolean(0));//false zero numbers
 console.log(Boolean(1));//true, as values are contained, doesn't have to be positive numbers, can be negative, its just any non zero number
-
+console.log(Boolean({a:1, b:2})); // true: any object
+console.log(Boolean({})); // also true as it includes empty objects
