@@ -73,3 +73,23 @@ console.log(noName());
 // Arrow functions => not called fat arrows due to body shaming code ^-^
 // are a form of anon function expression with a shortened syntax
 // they are similar to Java Lambdas but in java they have an ultra specific execution context
+
+// Stage 1 take an anon function expression
+
+const noName2 = function(){
+    return 'Something or other some text here';
+}
+
+// Stage 2
+// remove function keyword and place arrow after bracket
+const noName3 = () => {
+    return 'Something or other'
+}
+
+// Stage 3
+// Remove return keyword and braces if body has one line only
+const noName4 = () => "Something or other here";
+
+// Stage 4 is optional
+// remove parenthesis if there is just one arg
+const noName5 = name => "Something or " + name;
