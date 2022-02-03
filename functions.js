@@ -32,7 +32,7 @@ console.log('greet2: ' + greet2("Patty")); //greet2: undefined
 //Function declaration
 //input and output
 function greet3(name){
-    return "Hello " + name + " how are you today?";
+    return "Hello " + name + " how are you today?"; // you must have a return statement if you want to pass result to other factors in your code
 }
 greet3("Peter");
 // no console output without passing the result of the function to CLG
