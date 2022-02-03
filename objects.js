@@ -35,3 +35,39 @@ for(let member of bandOfFunctions){
     console.log(member.name);
     console.log(member.instruments);
 }
+
+const plays = function(){
+    let played = '';
+    for(let i = 0; i < this.instruments.length; i++){
+        if( i === this.instruments.length - 1){
+            player += this.instruments[i] + '. ';
+        } else {
+            played += this.instruments[i] + ', ';
+        }
+    }
+    return `${this.name} plays ${played}`;
+}
+
+console.log(alanFC.plays());
+
+class Musician{
+    constructor(name, age, ...instruments){
+        this.name = name;
+        this.age = age;
+        this.instruments = [...instruments]; // Spread Syntax
+    }
+    plays = function () {
+        let played = '';
+    for(let i = 0; i < this.instruments.length; i++){
+        if( i === this.instruments.length - 1){
+            player += this.instruments[i] + '. ';
+        } else {
+            played += this.instruments[i] + ', ';
+        }
+    }
+    return `${this.name} plays ${played}`;
+    }
+    //Inside es6 class  
+} //end class
+// Some people think this is more readable it ship functions in same code as data but we can still use es5 class
+
