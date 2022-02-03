@@ -7,5 +7,23 @@ var answer3 = '1918'
 
 for (var i = 1; i <= 3; i++) {
     var guess = '';
+    switch(i){
+        case 1: guess = prompt(q1);
+                if(guess==a1){
+                    alert('Right!');
+                } else alert('Wrong... it was ' + a1);
+        break;
+        case 2: guess = prompt(q2);
+        if(guess==a2){
+                    alert('Right!');
+                } else alert('Wrong... it was ' + a2);
+        break;
+        case 3: guess = prompt(q3);
+        if(guess==a3){
+                    alert('Right!');
+                } else alert('Wrong... it was ' + a3);
+        break;
+        default: alert('enter a date in yyyy format');
+    }
+    
 }
-
