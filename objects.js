@@ -4,16 +4,15 @@ console.table(person);
 const alan = {name: '', age: 0};
 console.table(person);
 
-const alan = {name: 'John turner', age: 50};
+
 const bruce = {name: 'Luke', age: 29};
 const nils = {name: 'Peter', age: 400};
 
 // so we want to put object literals in a collection their props/attr are not uniform
 
 const bandOfLiterals = [];
-bandOfLiterals.push(Alan);
-bandOfLiterals.push(Peter);
-bandOfLiterals.push(Bruce);
+bandOfLiterals.push(nils);
+bandOfLiterals.push(bruce);
 
 for(let member of bandOfLiterals){
     console.log(member.name);
@@ -25,3 +24,14 @@ function Musician(name, age, ...instruments){// rest operator, for the rest of t
     this.age = age;
     this.instruments = [...instruments];
 } 
+const alanFC = new Musician('Alan', 54, 'keyboard', 'potato', 'triangle');
+const peterFC = new Musician('Peter', 23, 'guitar', 'potato', 'keyboard');
+
+const bandOfFunctions = [];
+bandOfFunctions.push(alanFC);
+bandOfFunctions.push(peterFC);
+
+for(let member of bandOfFunctions){
+    console.log(member.name);
+    console.log(member.instruments);
+}
