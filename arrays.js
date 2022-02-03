@@ -90,4 +90,5 @@ console.log(shortBandNames);
 console.log(band.map(e => e.toUpperCase()).filter((e) => e.length <= 4));
 // [ 'NILS', 'TOM', 'MAX', 'GARY', 'JAKE' ] - Result
 
+// sort splice map slice for the excersize
 
