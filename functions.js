@@ -39,3 +39,37 @@ greet3("Peter");
 console.log(greet3("Peter"));
 
 
+//Function declaration output no input
+
+function greet4(){
+    return "Hello world how are you today?"
+}
+console.log(greet4());
+
+// Advanced functions:
+
+// 5. Function declaration with a type check
+
+function greet5(name){
+    if(typeof name !== 'string'){
+        return null;
+    }
+    return "Hello " + name + " How are you today?";
+}
+
+console.log(greet5("Suzie")); // Hello Suzie How are you today?
+console.log(greet5()); // null
+console.log(greet5(12345)); // null still as its not a string
+
+// 6. Anon function expression
+// function expressions are not loaded into memory at the start
+// they are loaded where they occur in the code thus saving time and memory
+// special uise cases for this include prototype manupulation in 00 JS - later
+const noName = function(){
+    return 'Something or other some text here';
+}
+console.log(noName());
+
+// Arrow functions => not called fat arrows due to body shaming code ^-^
+// are a form of anon function expression with a shortened syntax
+// they are similar to Java Lambdas but in java they have an ultra specific execution context
