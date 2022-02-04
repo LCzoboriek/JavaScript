@@ -92,3 +92,21 @@ console.log(band.map(e => e.toUpperCase()).filter((e) => e.length <= 4));
 
 // sort splice map slice for the excersize
 
+const newArr = [1,2,3].map((val) => {
+    return val + 1;
+})
+
+console.log(newArr); // [ 2, 3, 4 ]
+
+// NOTE: as reducers usually return a single value
+// they are usually used LAST in a chain
+//  this keeps the array datatype going, so you may perform more map/filter operations
+
+const housePrices = [103000, 245000, 545000, 93000, 125000];
+// User map, reduce and filter (not necessarily in that order) to find:
+// the average house price under 150,000 after 3% stamp duty is added
+
+let pricesUnder150PlusTax = housePrices.map((hp) => (hp * 103) /100)
+.filter((hp) => hp <= 150000);
+
+console.log(pricesUnder150PlusTax.reduce((prev, curr) => prev + curr) / pricesUnder150PlusTax.length);
