@@ -18,3 +18,6 @@ const
     must be initialised
     does not put proper on global object
     is block scoped
+
+
+classList property references an array of classes assigned to the elemtn, you can then manipulate that array
